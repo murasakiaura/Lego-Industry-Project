@@ -1,48 +1,30 @@
 import "./Header.scss";
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from "../../assets/images/logo.png";
-import searchicon from "../../assets/images/search-icon.jpg";
-import hearticon from "../../assets/images/heart-icon.png";
-import shoppingbagicon from "../../assets/images/shoppingbag-icon.jpg";
+import React from "react";
+import { Link } from "react-router-dom";
+import  search  from "../../assets/icons/search.svg";
+import heart from "../../assets/icons/heart.svg";
+import legoHead from "../../assets/icons/legoHead.svg";
+import bag from "../../assets/icons/bag.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
-
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 function Header() {
   return (
     <header className="header">
-      {/* Logo Link */}
-      {/* <Link to="/" className="header__link">
-        <img className="header__logo" src={logo} alt="Logo" />
-      </Link> */}
-
-      {/* Top Header Links */}
-      {/* <div className="header-top">
-        <p href="" className="header-link">Find a Store</p>
-        <p href="#" className="header-link">Customer Service</p>
-        <p href="#" className="header-link">United Kingdom</p>
-      </div> */}
-
-      {/* Main Navigation */}
-      {/* <div className="header-container"> */}
-        {/* <div className="logo"> */}
-        <Link to="/" className="header__link">
-        <img className="header__logo" src={logo} alt="Logo" />
+      <div className="header__menu-logo-wrapper">
+      <div className="header__menu-container">
+            <FontAwesomeIcon className="header__menu-icon" icon={faBars} />
+            <p className="header__menu-text">MENU</p>
+        </div>
+      <Link to="/" className="header__link">
+        <img className="header__logo" src='https://assets.lego.com/logos/v4.5.0/brand-lego.svg' alt="Logo" />
       </Link>
-        {/* </div> */}
-        <nav>
-          <ul className="header__nav-list">
-            <li><p href="#">SHOP</p></li>
-            <li><p href="#">DISCOVER</p></li>
-            <li><p href="#">HELP</p></li>
-            <li><p href="#">DREAMZZZ</p></li>
-          </ul>
-        </nav>
-        {/* <div className="header-right"> */}
-            <FontAwesomeIcon icon={faSearch} />
-        {/* </div> */}
-      {/* </div> */}
+      </div>
+      <div className="header__icon-wrapper">
+    <img className="header__icon" src={ search } alt="search"/>
+    <img className="header__icon" src={ legoHead } alt="search"/>
+    <img className="header__icon" src={ heart } alt="search"/>
+    <img className="header__icon header__icon-bag" src={ bag } alt="search"/>
+      </div>
     </header>
   );
 }
