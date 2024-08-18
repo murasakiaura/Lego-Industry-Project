@@ -1,0 +1,24 @@
+@use "../../styles//partials//mixin.scss" as *;
+@use "../../styles/partials//varibles.scss" as *;
+
+.footer {
+    background-color:#301e5f;
+    color:$primary-white;
+    font-size:400;
+
+    .__container {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .__logo {
+        width:2rem;
+        height:2rem;
+    }
+
+    .__column {
+        display:flex;
+        flex-direction:column;
+    }
+    
+}
