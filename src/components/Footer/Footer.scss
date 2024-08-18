@@ -2,23 +2,124 @@
 @use "../../styles/partials//varibles.scss" as *;
 
 .footer {
-    background-color:#301e5f;
-    color:$primary-white;
-    font-size:400;
+  background-color: rgb(32, 29, 72);
+  color: $primary-white;
+  font-size: 400;
 
-    .__container {
-        display:flex;
-        flex-direction:row;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logocontainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 3.5rem 0 2rem 2rem;
+  }
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+    padding-right: 1rem;
+  }
+
+  &__location {
+    width: 15rem;
+    height: 3.5rem;
+  }
+
+  &__legoinfo {
+    padding: 0 0 2rem 2rem;
+
+    &--text {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__emailcontainer {
+    padding: 0 0 2rem 2rem;
+    font-size: 1.5rem;
+    border-bottom: solid 1px $primary-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__email {
+    width: 70%;
+    height: 4rem;
+    padding-top: 2rem;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  &__aboutus {
+    padding: 2rem 0 2rem 2rem;
+    border-bottom: solid 1px $primary-white;
+  }
+  &__support {
+    padding: 2rem 0 2rem 2rem;
+    border-bottom: solid 1px $primary-white;
+  }
+
+  &__attractions {
+    padding: 2rem 0 2rem 2rem;
+    border-bottom: solid 1px $primary-white;
+  }
+
+  &__morefromus {
+    padding: 2rem 0 2rem 2rem;
+    border-bottom: solid 1px $primary-white;
+  }
+
+  &__followus {
+    padding: 3rem 0 2rem 2rem;
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  &__socialicon {
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  &__privacy {
+    padding: 0 0 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &--upper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      padding-bottom: 2rem;
     }
 
-    .__logo {
-        width:2rem;
-        height:2rem;
+    &--lower {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60%;
     }
+  }
 
-    .__column {
-        display:flex;
-        flex-direction:column;
-    }
-    
+  &__legal {
+    padding: 0 2rem 3rem 2rem;
+    line-height: 1.8rem;
+  }
 }
