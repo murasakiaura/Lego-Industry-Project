@@ -2,6 +2,10 @@
 @use "../../styles/partials//varibles.scss" as *;
   
   .header{
+    &__desktop-container{
+      display:none;
+    }
+    &__mobile-tablet-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,6 +13,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     border-bottom: 0.2rem solid $primary-yellow;
+    }
     &__menu-logo-wrapper{
       display: flex;
     flex-direction: row;
@@ -40,4 +45,56 @@
       display: flex;
       align-items: center;
     }
+    @include desktop{
+      &__mobile-tablet-container{
+      display: none;
+    }
+    &__desktop-container{
+      display: flex;
+      padding: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      background-color: $primary-yellow;
+      justify-content: space-between;
+    }
+    &__logo-desktop{
+      width: 5.5rem;
+      height: 5.5rem;
+      margin-right: 6.5rem;
+    }
+    &__nav-list-desktop{
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+    &__menu-link{
+      padding-right: 5rem;
+    }
+    &__menu-link-dreamzz{
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: $primary-white;
+      border-radius: 0.5rem;
+    }
+    &__styling-link-container{
+      display: flex;
+    }
+    &__icon-wrapper-desktop{
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 100%;
+      padding-right: 3rem;
+    }
+    &__icon-search{
+      padding: 1rem;
+      background-color: $primary-white;
+      margin-right: 3rem;
+      border-radius: 60%;
+      border-width: 0;
+    }
   }
+}
+
