@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/gift-finder" element={<GiftFinder/>} />
+      {/* <Route path="/" element={<LandingPage />} />
+      <Route path="/gift-finder" element={<GiftFinder/>} /> */}
       </Routes> 
      </BrowserRouter>
   );
