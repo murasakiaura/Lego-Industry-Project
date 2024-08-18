@@ -14,3 +14,83 @@ $secondary-grey: #D9D8D8;
 $secondary-dark-green: #008439;
 $secondary-dark-black: #141414;
 $secondary-darkblue: #0045B7;
+
+
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../../assets/fonts/Fontspring-DEMO-cerapro-bold.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Cera Pro";
+    src: url("../../assets/fonts/Fontspring-DEMO-cerapro-regular.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Cera Pro";
+    src: url("../../assets/fonts/Fontspring-DEMO-cerapro-medium.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  $font-size1: 24px;
+  $font-size2: 14px;
+  $font-size3: 13px;
+  $font-size4: 10px;
+  $font-size5: 60px;
+  $font-size6: 36px;
+  $font-size7: 12px;
+  
+  $line-height1: 32px;
+  $line-height2: 22px;
+  $line-height3: 18px;
+  $line-height4: 20px;
+  $line-height5: 68px;
+  $line-height6: 44px;
+  
+  body {
+    font-family: "Cera Pro";
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  
+  h1 {
+    font-family: "Cera Pro";
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-family: "Cera Pro";
+    font-weight: 600;
+  }
+  
+  h4 a {
+    font-family: "Cera Pro";
+    font-weight: 400;
+  }
+  
+  p {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    margin:0;
+  }
+  
+  input {
+    font-family: "Cera Pro";
+    font-weight: 400;
+  }
+  
+  textarea {
+    font-family: "Cera Pro";
+    font-weight: 400;
+  }
+  
+  button {
+    font-family: "Cera Pro";
+    font-weight: 600;
+  }
+  
