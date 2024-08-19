@@ -10,6 +10,7 @@ function Landing() {
     navigate("/giftIdeas");
   }
     return (
+        <>
         <Carousel className='landing' autoPlay infiniteLoop showThumbs={false}>
             <div className='landing__element-wrapper landing__main-img'>
                 {/* <img className='landing__image' src={wizardImg} alt="Slide 1" /> */}
@@ -36,6 +37,7 @@ function Landing() {
                 {/* </div> */}
             </div>
         </Carousel>
+        </>
     );
 };
 
