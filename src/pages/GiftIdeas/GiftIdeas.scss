@@ -1,0 +1,168 @@
+@use "../../styles//partials//mixin.scss" as *;
+@use "../../styles/partials//varibles.scss" as *;
+
+
+.gift-section {
+    background: linear-gradient(135deg, $primary-blue 0%, $primary-green 100%);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    color: $primary-white;
+  
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    &__image {
+      width: 12.5rem;
+      height: 12.5rem;
+      background-color: $secondary-grey;
+      margin-bottom: 1.5rem;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    &__title {
+      font-size: $font-size6;
+      line-height: $line-height6;
+      margin: 0;
+      color: $primary-white;
+      text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+    }
+  
+    &__description {
+      margin: 1rem 0;
+      font-size: $font-size2;
+      line-height: $line-height2;
+      color: $secondary-grey;
+    }
+  
+    &__button {
+      padding: 0.8rem 2rem;
+      background: linear-gradient(135deg, $primary-red, $secondary-dark-blue);
+      color: $primary-white;
+      border: none;
+      border-radius: 1.5625rem;
+      cursor: pointer;
+      font-size: $font-size3;
+      line-height: $line-height3;
+      transition: background 0.3s ease, transform 0.3s ease;
+  
+      &:hover {
+        background: linear-gradient(135deg, $secondary-dark-blue, $primary-red);
+        transform: translateY(-0.125rem);
+      }
+    }
+  }
+  
+  .age-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 90%;
+    background: linear-gradient(135deg, $primary-yellow 50%, $primary-orange 100%);
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  
+    &__title {
+      font-size: $font-size5;
+      line-height: $line-height5;
+      margin-bottom: 1rem;
+      color: $primary-black;
+      text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+    }
+  
+    &__description {
+      font-size: $font-size2;
+      line-height: $line-height2;
+      margin-bottom: 2rem;
+      color: $primary-black;
+    }
+  
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  
+    &__block {
+      padding: 2rem;
+      border-radius: 0.5rem;
+      font-size: $font-size1;
+      line-height: $line-height1;
+      color: $primary-white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: $primary-red;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: -1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: inherit;
+        border-radius: 0; /* Changed to square */
+        box-shadow: inset 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+      }
+  
+      &:before {
+        left: 30%;
+      }
+  
+      &:after {
+        right: 30%;
+      }
+  
+      &:hover {
+        transform: translateY(-0.3125rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      }
+  
+      &--red {
+        background-color: $primary-red;
+      }
+  
+      &--green {
+        background-color: $primary-green;
+      }
+  
+      &--blue {
+        background-color: $primary-blue;
+      }
+  
+      &--purple {
+        background-color: $primary-purple;
+      }
+  
+      &--orange {
+        background-color: $primary-orange;
+      }
+  
+      &--yellow {
+        background-color: $primary-yellow;
+      }
+    }
+  }
