@@ -1,6 +1,7 @@
 import "./GiftIdeas.scss";
 import React from "react";
 import giftcard from "../../assets/images/gift-card.png";
+import { Link } from 'react-router-dom';
 
 function GiftIdeas() {
   return (
@@ -21,7 +22,10 @@ function GiftIdeas() {
               Finding that perfect gift can be challenging. Let the LEGO gift
               finder find that WOW gift for you.
             </p>
+            <Link to="/gift-finder">
             <button className="gift-section__button">Gift Finder</button>
+            </Link>
+            
           </div>
         </div>
       </section>
@@ -54,7 +58,7 @@ function GiftIdeas() {
             <img className="gift-section__img" src={giftcard} alt="gift card" />
           </div>
           <div className="gift-section__content">
-            <h2 className="gift-section__title">LEGO Gift-card</h2>
+            <h2 className="gift-section__title">LEGO Gift Card</h2>
             <p className="gift-section__description">
               Finding that perfect gift can be challenging. Let the LEGO gift
               finder find that WOW gift for you.
