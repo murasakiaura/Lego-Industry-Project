@@ -1,0 +1,80 @@
+@use "../../styles//partials//mixin.scss" as *;
+@use "../../styles/partials//varibles.scss" as *;
+
+.landing{
+    &__element-wrapper{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__main-img{
+        background-color: $secondary-purple;
+        background-image: url('../../assets/images/Lego Carosel Image Wizard.jpg');
+        background-repeat: no-repeat; 
+        background-size: contain;
+        background-position: center;
+        align-items: start;
+        padding-left: 5rem;
+        
+    }
+    &__side1-img{
+        background-image: url('https://www.lego.com/cdn/cs/set/assets/blt8c35c4380b81393d/01_Dreamzzz-Subpage_Hero-Standard_Mobile_V3.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2');
+        //background-image: url('https://www.lego.com/cdn/cs/set/assets/bltb2886ed0c867b39e/AugustNovelty-Homepage-202408-Hero-Standard-Small.jpg?fit=crop&format=webply&quality=80&width=600&height=600&dpr=2" alt="Slide 2');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+        color: $primary-white;
+    }
+    &__side2-img{
+        background-image: url('https://www.lego.com/cdn/cs/set/assets/blt8aead4f73a1ec4db/1946-DreamZzz-202408-HP-Hero-Standard-71486-71484-Medium.jpg?format=webply&fit=crop&quality=60&width=900&height=445&dpr=2');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+        color: $primary-white;
+    }
+    
+    &__heading{
+        padding-bottom: 0.5rem;
+    }
+    &__text{
+        padding-bottom: 0.5rem;
+        width: 40%;
+        text-align: left;
+    }
+    &__button{
+        color: $primary-white;
+        background-color: $primary-black;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 0.4rem;
+        border-width: 0;
+    }
+    &__text-side1{
+        text-align: center;
+    }
+    @include tablet{
+        &__heading{
+            font-size: 3rem;
+        }
+        &__text{
+            font-size: 1.7rem;
+            font-weight: 300;
+            width: 50%;
+        }
+        &__button{
+            width: 15rem;
+            height: 3.5rem;
+            margin-top: 1rem;
+        }
+    }
+    @include desktop{
+        &__element-wrapper{
+            height: 80vh;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+    }
+
+}
