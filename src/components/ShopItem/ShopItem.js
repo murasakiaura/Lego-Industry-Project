@@ -9,7 +9,7 @@ import iconStar from '../../assets/icons/Icon_Ratings_Default.svg';
 function ShopItem() {
   return (
     <div className="shop-item">
-      <img src={img} className="shop-item__img" />
+      <img src="https://www.lego.com/cdn/cs/set/assets/bltb25259c39204c629/75389_boxprod_v39_sha.jpg?format=webply&fit=bounds&quality=80&width=600&height=600&dpr=2" className="shop-item__img" />
       <div className="shop-item__icon-container">
         <span className="shop-item__single-icon-wrapper">
           <img src={iconAge} className="shop-item__icon" />
