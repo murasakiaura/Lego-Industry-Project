@@ -79,6 +79,7 @@
   text-align: center;
   margin: 2rem auto;
   max-width: 90%;
+  
   background: linear-gradient(
     135deg,
     $primary-yellow 50%,
@@ -108,6 +109,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    @include desktop{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   }
 
   &__block {
@@ -125,7 +132,10 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     font-family: "Roboto", sans-serif;
-
+  @include desktop{
+        width: 20vw;
+        margin-top: 2rem;
+      }
     &:before,
     &:after {
       content: "";
@@ -136,6 +146,7 @@
       background-color: inherit;
       border-radius: 0;
       box-shadow: inset 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+      
     }
 
     &:before {
