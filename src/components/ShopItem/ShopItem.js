@@ -29,8 +29,8 @@ function ShopItem() {
         </span>
       </div>
       <div className="shop-item__description-container">
-        <h2 className="shop-item__descrption-title">Bird Island Egg Heist</h2>
-        <p className="shop-item__price">£ 123</p>
+        <h2 className="shop-item__descrption-title">The Dark Falcon</h2>
+        <p className="shop-item__price">£ 159.99</p>
         <button className="shop-item__button">Shop Now</button>
       </div>
     </div>
