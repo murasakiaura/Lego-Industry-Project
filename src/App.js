@@ -13,9 +13,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Landing />} />
       {/* <Route path="/gift-finder" element={<GiftFinder/>} /> */}
-     
+      <Route path="/giftIdeas" element={<GiftIdeas />} />
       </Routes> 
-      <GiftIdeas />
       <Footer />
      </BrowserRouter>
   );

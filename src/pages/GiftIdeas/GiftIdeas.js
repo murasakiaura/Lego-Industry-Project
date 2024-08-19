@@ -2,11 +2,10 @@ import "./GiftIdeas.scss";
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-
+import { Link, useNavigate } from "react-router-dom";
 
 
 function GiftIdeas() {
-    <Header />
     return (
         <div>
 
@@ -55,7 +54,6 @@ function GiftIdeas() {
     </div>
 
     );
-    <Footer />;
 }
 
 export default GiftIdeas;

@@ -2,9 +2,13 @@ import "./LandingPage.scss"
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import wizardImg from '../../assets/images/Lego Carosel Image Wizard.jpg'
+import { Link, useNavigate } from "react-router-dom";
 
 function Landing() {
+    const navigate = useNavigate();
+  function navigationIdea() {
+    navigate("/giftIdeas");
+  }
     return (
         <Carousel className='landing' autoPlay infiniteLoop showThumbs={false}>
             <div className='landing__element-wrapper landing__main-img'>
@@ -12,7 +16,7 @@ function Landing() {
                 {/* <div className='landing__hero-container'> */}
                 <h2 className='landing__heading'>LEGO Gift Finder</h2>
                 <p className="landing__text">Try out new Gift Finder and let us find a set that just CLICKS!</p>
-                <button className='landing__button'>Gift Finder </button>
+                <button className='landing__button' onClick={navigationIdea}>Gift Finder </button>
                 {/* </div> */}
             </div>
             <div className='landing__element-wrapper landing__side1-img'>
